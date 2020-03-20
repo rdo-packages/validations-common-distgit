@@ -40,6 +40,7 @@ BuildRequires:  PyYAML
 %else
 BuildRequires:  python3dist(ansible) >= 2
 BuildRequires:  python%{pyver}-PyYAML
+BuildRequires:  /usr/bin/pathfix.py
 %endif
 
 %if %{pyver} == 2
@@ -68,6 +69,14 @@ A collection of Ansible librairies, Plugins and Roles for the Validation Framewo
 
 %install
 %{pyver_install}
+
+%if %{pyver} == 3
+# Fix shebangs for Python 3-only distros
+pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{_datadir}/%{name}/library/
+pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{_datadir}/%{name}/lookup_plugins/
+pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{_datadir}/%{name}/callback_plugins/
+pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{_datadir}/%{name}/roles/
+%endif
 
 %check
 PYTHON=%{pyver_bin} %{pyver_bin} setup.py test
