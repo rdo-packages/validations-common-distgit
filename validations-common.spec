@@ -1,15 +1,3 @@
-# Macros for py2/py3 compatibility
-%if 0%{?fedora} || 0%{?rhel} > 7
-%global pyver 3
-%else
-%global pyver 2
-%endif
-
-%global pyver_bin python%{pyver}
-%global pyver_sitelib %{expand:%{python%{pyver}_sitelib}}
-%global pyver_install %{expand:%{py%{pyver}_install}}
-%global pyver_build %{expand:%{py%{pyver}_build}}
-# End of macros for py2/py3 compatibility
 
 %{!?upstream_version: %global upstream_version %{version}}
 %global upstream_name validations-common
@@ -26,32 +14,22 @@ Source0:        https://tarballs.opendev.org/openstack/%{upstream_name}/%{upstre
 BuildArch:      noarch
 BuildRequires:  git
 BuildRequires:  openstack-macros
-BuildRequires:  python%{pyver}-setuptools
-BuildRequires:  python%{pyver}-devel
-BuildRequires:  python%{pyver}-pbr >= 3.1.1
-BuildRequires:  python%{pyver}-testrepository
-BuildRequires:  python%{pyver}-testscenarios
-BuildRequires:  python%{pyver}-testtools
-BuildRequires:  python%{pyver}-oslotest
+BuildRequires:  python3-setuptools
+BuildRequires:  python3-devel
+BuildRequires:  python3-pbr >= 3.1.1
+BuildRequires:  python3-testrepository
+BuildRequires:  python3-testscenarios
+BuildRequires:  python3-testtools
+BuildRequires:  python3-oslotest
 
-%if %{pyver} == 2
-BuildRequires:  ansible >= 2
-BuildRequires:  PyYAML
-%else
 BuildRequires:  python3dist(ansible) >= 2
-BuildRequires:  python%{pyver}-PyYAML
-%endif
+BuildRequires:  python3-PyYAML
 
-%if %{pyver} == 2
-Requires:       ansible >= 2
-Requires:       PyYAML
-%else
 Requires:       python3dist(ansible) >= 2
-Requires:       python%{pyver}-PyYAML
-%endif
+Requires:       python3-PyYAML
 
-Requires:       python%{pyver}-pbr >= 3.1.1
-Requires:       python%{pyver}-validations-libs
+Requires:       python3-pbr >= 3.1.1
+Requires:       python3-validations-libs
 
 %description
 A collection of Ansible librairies, Plugins and Roles for the Validation Framework
@@ -64,20 +42,20 @@ A collection of Ansible librairies, Plugins and Roles for the Validation Framewo
 %py_req_cleanup
 
 %build
-%{pyver_build}
+%{py3_build}
 
 %install
-%{pyver_install}
+%{py3_install}
 
 %check
-PYTHON=%{pyver_bin} %{pyver_bin} setup.py test
+PYTHON=%{__python3} %{__python3} setup.py test
 
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
-%{pyver_sitelib}/%{srcname}
-%{pyver_sitelib}/%{srcname}-*.egg-info
+%{python3_sitelib}/%{srcname}
+%{python3_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/%{name}/
-%exclude %{pyver_sitelib}/validations_common/test*
+%exclude %{python3_sitelib}/validations_common/test*
 
 %changelog
