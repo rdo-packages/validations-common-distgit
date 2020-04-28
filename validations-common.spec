@@ -29,7 +29,7 @@ BuildRequires:  openstack-macros
 BuildRequires:  python%{pyver}-setuptools
 BuildRequires:  python%{pyver}-devel
 BuildRequires:  python%{pyver}-pbr >= 3.1.1
-BuildRequires:  python%{pyver}-testrepository
+BuildRequires:  python%{pyver}-stestr
 BuildRequires:  python%{pyver}-testscenarios
 BuildRequires:  python%{pyver}-testtools
 BuildRequires:  python%{pyver}-oslotest
@@ -70,7 +70,7 @@ A collection of Ansible librairies, Plugins and Roles for the Validation Framewo
 %{pyver_install}
 
 %check
-PYTHON=%{pyver_bin} %{pyver_bin} setup.py test
+PYTHON=%{pyver_bin} stestr-%{pyver_bin} --test-path validations_common/tests run
 
 %files
 %doc README* AUTHORS ChangeLog
