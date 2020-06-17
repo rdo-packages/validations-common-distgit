@@ -29,6 +29,7 @@ Requires:       python3dist(ansible) >= 2
 Requires:       python3-PyYAML
 
 Requires:       python3-pbr >= 3.1.1
+Requires:       python3-prettytable
 Requires:       python3-validations-libs
 
 %description
