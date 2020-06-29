@@ -33,6 +33,7 @@ BuildRequires:  python%{pyver}-testrepository
 BuildRequires:  python%{pyver}-testscenarios
 BuildRequires:  python%{pyver}-testtools
 BuildRequires:  python%{pyver}-oslotest
+BuildRequires:  python%{pyver}-validations-libs
 
 %if %{pyver} == 2
 BuildRequires:  ansible >= 2
@@ -51,6 +52,7 @@ Requires:       python%{pyver}-PyYAML
 %endif
 
 Requires:       python%{pyver}-pbr >= 3.1.1
+Requires:       python%{pyver}-prettytable
 Requires:       python%{pyver}-validations-libs
 
 %description
@@ -81,3 +83,4 @@ PYTHON=%{pyver_bin} %{pyver_bin} setup.py test
 %exclude %{pyver_sitelib}/validations_common/test*
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/validations-common/commit/?id=69c2ad9269885f92b51d5c6b1b8defa6ab530335
