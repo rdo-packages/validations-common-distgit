@@ -53,6 +53,7 @@ stestr-3 --test-path validations_common/tests run
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
+%{_bindir}/validation.py
 %{python3_sitelib}/%{srcname}
 %{python3_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/%{name}/
