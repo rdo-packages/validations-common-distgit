@@ -53,6 +53,8 @@ Requires:       python%{pyver}-PyYAML
 Requires:       python%{pyver}-pbr >= 3.1.1
 Requires:       python%{pyver}-validations-libs
 
+Requires:       python%{pyver}-prettytable
+
 %description
 A collection of Ansible librairies, Plugins and Roles for the Validation Framework
 
@@ -75,6 +77,7 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
+%{_bindir}/validation.py
 %{pyver_sitelib}/%{srcname}
 %{pyver_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/%{name}/
