@@ -62,3 +62,4 @@ stestr-3 --test-path validations_common/tests run
 %exclude %{python3_sitelib}/validations_common/test*
 
 %changelog
+
