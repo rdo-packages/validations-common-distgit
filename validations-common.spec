@@ -80,7 +80,7 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 %{_bindir}/validation.py
 %{pyver_sitelib}/%{srcname}
 %{pyver_sitelib}/%{srcname}-*.egg-info
-%{_datadir}/%{name}/
+%{_datadir}/ansible/
 %exclude %{pyver_sitelib}/validations_common/test*
 
 %changelog
