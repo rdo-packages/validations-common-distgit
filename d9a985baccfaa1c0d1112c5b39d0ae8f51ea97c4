@@ -1,0 +1,9 @@
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Code-Review+2: Gaël Chamoulaud <gchamoul@redhat.com>
+Workflow+1: Cédric Jeanneret <cjeanner+github@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 08 Sep 2020 15:38:03 +0000
+Reviewed-on: https://review.rdoproject.org/r/29191
+Project: openstack/validations-common-distgit
+Branch: refs/heads/rpm-master
