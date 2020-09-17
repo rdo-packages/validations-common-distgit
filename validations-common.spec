@@ -84,3 +84,4 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 %exclude %{pyver_sitelib}/validations_common/test*
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/validations-common/commit/?id=0ae6673343b28e5e7bb81ddd871e2d79101b4d2b
