@@ -17,8 +17,8 @@
 
 Name:           validations-common
 Summary:        A collection of Ansible libraries, Plugins and Roles for the Validation Framework
-Version:        XXX
-Release:        XXX
+Version:        1.1.1
+Release:        0.1%{?dist}
 License:        ASL 2.0
 URL:            https://opendev.org/openstack/validations-common
 Source0:        https://tarballs.opendev.org/openstack/%{upstream_name}/%{upstream_name}-%{upstream_version}.tar.gz
@@ -37,6 +37,7 @@ BuildRequires:  python%{pyver}-oslotest
 %if %{pyver} == 2
 BuildRequires:  ansible >= 2
 BuildRequires:  PyYAML
+BuildRequires:  python2-mock
 %else
 BuildRequires:  python3dist(ansible) >= 2
 BuildRequires:  python%{pyver}-PyYAML
@@ -61,6 +62,12 @@ A collection of Ansible librairies, Plugins and Roles for the Validation Framewo
 %prep
 %autosetup -n %{upstream_name}-%{upstream_version} -S git
 
+# To handle mock for py2 build
+%if %{pyver} == 2
+find ./validations_common/tests/ -type f -exec sed -i -e 's/from unittest import mock/import mock/g' {} \;
+find ./validations_common/tests/ -type f -exec sed -i -e 's/from unittest.mock/from mock/g' {} \;
+%endif
+
 # Remove the requirements file so that pbr hooks don't add it
 # to distutils requires_dist config
 %py_req_cleanup
@@ -84,3 +91,6 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 %exclude %{pyver_sitelib}/validations_common/test*
 
 %changelog
+* Fri Sep 25 2020 RDO <dev@lists.rdoproject.org> 1.1.1-0.1
+- Update to 1.1.1
+
