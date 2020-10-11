@@ -14,6 +14,9 @@ Source0:        https://tarballs.opendev.org/openstack/%{upstream_name}/%{upstre
 BuildArch:      noarch
 BuildRequires:  git
 BuildRequires:  openstack-macros
+%if %{pyver} == 2
+BuildRequires:  python2-mock
+%endif
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr >= 3.1.1
@@ -25,6 +28,9 @@ BuildRequires:  python3-oslotest
 BuildRequires:  python3dist(ansible) >= 2
 BuildRequires:  python3-PyYAML
 
+%if %{pyver} == 2
+Requires:  python2-mock
+%endif
 Requires:       python3dist(ansible) >= 2
 Requires:       python3-PyYAML
 
