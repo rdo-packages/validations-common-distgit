@@ -24,6 +24,9 @@ BuildRequires:  python3-oslotest
 
 BuildRequires:  python3dist(ansible) >= 2
 BuildRequires:  python3-PyYAML
+%if %{pyver} == 2
+BuildRequires:  python2-mock
+%endif
 
 Requires:       python3dist(ansible) >= 2
 Requires:       python3-PyYAML
@@ -32,6 +35,9 @@ Requires:       python3-pbr >= 3.1.1
 
 Requires:       python3-prettytable
 Requires:       python3-validations-libs
+%if %{pyver} == 2
+Requires:  python2-mock
+%endif
 
 %description
 A collection of Ansible librairies, Plugins and Roles for the Validation Framework
