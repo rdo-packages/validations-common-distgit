@@ -97,3 +97,4 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 * Fri Sep 25 2020 RDO <dev@lists.rdoproject.org> 1.1.1-0.1
 - Update to 1.1.1
 
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/validations-common/commit/?id=844b877a686db15927d27b456892206758bea214
