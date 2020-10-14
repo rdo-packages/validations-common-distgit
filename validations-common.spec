@@ -62,3 +62,4 @@ stestr-3 --test-path validations_common/tests run
 %exclude %{python3_sitelib}/validations_common/test*
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/validations-common/commit/?id=844b877a686db15927d27b456892206758bea214
