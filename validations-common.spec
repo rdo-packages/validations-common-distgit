@@ -55,6 +55,7 @@ stestr-3 --test-path validations_common/tests run
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
+%{_datadir}/ansible
 %{_bindir}/validation.py
 %{python3_sitelib}/%{srcname}
 %{python3_sitelib}/%{srcname}-*.egg-info
