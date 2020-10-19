@@ -52,6 +52,16 @@ A collection of Ansible librairies, Plugins and Roles for the Validation Framewo
 %check
 stestr-3 --test-path validations_common/tests run
 
+# workaround, to be removed when [1] will be merged.
+# both are sharing the same roles, which is not convinient.
+# [1] https://review.opendev.org/#/c/758716/
+if [ -d "%{buildroot}%{_datadir}/ansible/roles/validations" ]; then
+rm -rf "%{buildroot}%{_datadir}/ansible/roles/validations"
+fi
+if [ -d "%{buildroot}%{_datadir}/ansible/roles/fetch-validations" ]; then
+rm -rf "%{buildroot}%{_datadir}/ansible/roles/fetch-validations"
+fi
+
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
