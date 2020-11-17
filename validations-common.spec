@@ -24,7 +24,7 @@ BuildArch:      noarch
 %if 0%{?sources_gpg} == 1
 BuildRequires:  /usr/bin/gpgv2
 %endif
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  openstack-macros
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
