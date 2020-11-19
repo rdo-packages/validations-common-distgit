@@ -65,6 +65,11 @@ A collection of Ansible librairies, Plugins and Roles for the Validation Framewo
 %install
 %{py3_install}
 
+# Create log directory with some default rights/ownership
+# In tripleo env, it will be overridden in order to allow the deploy user
+# (usually "stack") to write in it
+install -d -m 755 %{buildroot}%{_localstatedir}/log/validations
+
 %check
 stestr-3 --test-path validations_common/tests run
 
