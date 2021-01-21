@@ -64,9 +64,6 @@ A collection of Ansible librairies, Plugins and Roles for the Validation Framewo
 
 # To handle mock for py2 build
 %if %{pyver} == 2
-if [ ! -f %{srcname}/library/__init__.py ]; then
-touch %{srcname}/library/__init__.py
-fi
 find ./%{srcname}/tests/ -type f -exec sed -i -e 's/from unittest import mock/import mock/g' {} \;
 find ./%{srcname}/tests/ -type f -exec sed -i -e 's/from unittest.mock/from mock/g' {} \;
 %endif
