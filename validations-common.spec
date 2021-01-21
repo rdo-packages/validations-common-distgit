@@ -95,6 +95,7 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 %{pyver_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/ansible/
 %exclude %{pyver_sitelib}/validations_common/test*
+%exclude %{_datadir}/ansible/library/__init__.py
 
 %changelog
 * Fri Sep 25 2020 RDO <dev@lists.rdoproject.org> 1.1.1-0.1
