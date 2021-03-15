@@ -5,8 +5,12 @@
 %global upstream_name validations-common
 %global srcname validations_common
 
+%global common_desc \
+A collection of Ansible libraries, Plugins and Roles for the \
+Validation Framework
+
 Name:           validations-common
-Summary:        A collection of Ansible libraries, Plugins and Roles for the Validation Framework
+Summary:        Validation common libraries
 Version:        XXX
 Release:        XXX
 License:        ASL 2.0
@@ -46,7 +50,7 @@ Requires:       python3-prettytable
 Requires:       python3-validations-libs
 
 %description
-A collection of Ansible librairies, Plugins and Roles for the Validation Framework
+%{common_desc}
 
 %prep
 # Required for tarball sources verification
@@ -81,5 +85,7 @@ stestr-3 --test-path validations_common/tests run
 %{python3_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/ansible/
 %exclude %{python3_sitelib}/validations_common/test*
+
+%dir %{_localstatedir}/log/validations
 
 %changelog
