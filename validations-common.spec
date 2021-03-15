@@ -6,7 +6,8 @@
 %global srcname validations_common
 
 Name:           validations-common
-Summary:        A collection of Ansible libraries, Plugins and Roles for the Validation Framework
+Summary:        A collection of Ansible libraries, Plugins and Roles for the \
+                Validation Framework
 Version:        XXX
 Release:        XXX
 License:        ASL 2.0
@@ -81,5 +82,7 @@ stestr-3 --test-path validations_common/tests run
 %{python3_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/ansible/
 %exclude %{python3_sitelib}/validations_common/test*
+
+%dir %{_localstatedir}/log/validations
 
 %changelog
