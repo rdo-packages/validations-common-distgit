@@ -22,6 +22,30 @@
       "revId": "472260dcc1443174a90db7fb9de9b50fd4c7d3d9",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e7a8ee44_68718a9d",
+        "filename": "validations-common.spec",
+        "patchSetId": 7
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 278
+      },
+      "writtenOn": "2021-03-16T11:02:59Z",
+      "side": 1,
+      "message": "I think we want root:stack or root:$USER, but we can not predict the user in advance. Maybe we should create a specific user ?",
+      "parentUuid": "d7845264_6659b436",
+      "range": {
+        "startLine": 89,
+        "startChar": 0,
+        "endLine": 89,
+        "endChar": 38
+      },
+      "revId": "472260dcc1443174a90db7fb9de9b50fd4c7d3d9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
     }
   ]
 }
