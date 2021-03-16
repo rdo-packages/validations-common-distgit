@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d7845264_6659b436",
+        "filename": "validations-common.spec",
+        "patchSetId": 7
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2021-03-16T09:04:15Z",
+      "side": 1,
+      "message": "With the default permissions, we are getting root:root and 0755 for the directory. Just checking, this is what we want, right?",
+      "range": {
+        "startLine": 89,
+        "startChar": 0,
+        "endLine": 89,
+        "endChar": 38
+      },
+      "revId": "472260dcc1443174a90db7fb9de9b50fd4c7d3d9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
