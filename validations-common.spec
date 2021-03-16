@@ -81,5 +81,6 @@ stestr-3 --test-path validations_common/tests run
 %{python3_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/ansible/
 %exclude %{python3_sitelib}/validations_common/test*
+%exclude %{_datadir}/ansible/library/__init__.py
 
 %changelog
