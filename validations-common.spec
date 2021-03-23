@@ -38,6 +38,7 @@ BuildRequires:  python%{pyver}-oslotest
 BuildRequires:  ansible >= 2
 BuildRequires:  PyYAML
 BuildRequires:  python2-mock
+BuildRequires:  python2-six
 %else
 BuildRequires:  python3dist(ansible) >= 2
 BuildRequires:  python%{pyver}-PyYAML
@@ -46,6 +47,7 @@ BuildRequires:  python%{pyver}-PyYAML
 %if %{pyver} == 2
 Requires:       ansible >= 2
 Requires:       PyYAML
+Requires:       python2-six
 %else
 Requires:       python3dist(ansible) >= 2
 Requires:       python%{pyver}-PyYAML
@@ -69,6 +71,7 @@ touch %{srcname}/library/__init__.py
 fi
 find ./%{srcname}/tests/ -type f -exec sed -i -e 's/from unittest import mock/import mock/g' {} \;
 find ./%{srcname}/tests/ -type f -exec sed -i -e 's/from unittest.mock/from mock/g' {} \;
+find ./%{srcname} -type f -exec sed -i -e 's/from urllib import request/from six.moves.urllib import request/g' {} \;
 %endif
 
 # Remove the requirements file so that pbr hooks don't add it
