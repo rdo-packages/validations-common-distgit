@@ -36,6 +36,7 @@ BuildRequires:  python3-oslotest
 
 BuildRequires:  python3dist(ansible) >= 2
 BuildRequires:  python3-PyYAML
+BuildRequires:  python3-validations-libs
 
 Requires:       python3dist(ansible) >= 2
 Requires:       python3-PyYAML
