@@ -41,8 +41,13 @@ BuildRequires:  python2-mock
 BuildRequires:  python2-six
 %else
 BuildRequires:  python3dist(ansible) >= 2
+<<<<<<< HEAD   (7d5231 Fix unit tests on Python 2)
 BuildRequires:  python%{pyver}-PyYAML
 %endif
+=======
+BuildRequires:  python3-PyYAML
+BuildRequires:  python3-validations-libs
+>>>>>>> CHANGE (fe7999 Add python3-validations-libs as BuildRequires)
 
 %if %{pyver} == 2
 Requires:       ansible >= 2
