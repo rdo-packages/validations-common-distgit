@@ -42,6 +42,7 @@ BuildRequires:  python2-six
 %else
 BuildRequires:  python3dist(ansible) >= 2
 BuildRequires:  python%{pyver}-PyYAML
+BuildRequires:  python%{pyver}-validations-libs
 %endif
 
 %if %{pyver} == 2
