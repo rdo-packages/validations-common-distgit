@@ -1,0 +1,9 @@
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Code-Review+2: Gaël Chamoulaud <gchamoul@redhat.com>
+Workflow+1: Gaël Chamoulaud <gchamoul@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 12 Apr 2021 10:05:54 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/validations-common-distgit/+/33235
+Project: openstack/validations-common-distgit
+Branch: refs/heads/train-rdo
