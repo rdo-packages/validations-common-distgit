@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3eaf93f5_d3c6ac05",
+        "filename": "validations-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 717
+      },
+      "writtenOn": "2021-04-12T10:14:57Z",
+      "side": 1,
+      "message": "First of all, thank you for catching this. \n\nBut I have to ask. How is it that we avoided issues with it until now?\nAfter all, print is used as function throughout the VF codebase for a while, and none of your checks caught this.",
+      "revId": "7d5231cf0c6df9fcb0ae51b8443b1e11b80c9838",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
