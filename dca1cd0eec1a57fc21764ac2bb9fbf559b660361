@@ -39,6 +39,24 @@
       "revId": "dca1cd0eec1a57fc21764ac2bb9fbf559b660361",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "caf8e773_4fdf91d8",
+        "filename": "validations-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 717
+      },
+      "writtenOn": "2021-04-13T07:23:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "de456e73_f1381ac4",
+      "revId": "dca1cd0eec1a57fc21764ac2bb9fbf559b660361",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
