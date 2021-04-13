@@ -33,6 +33,7 @@ BuildRequires:  python%{pyver}-stestr
 BuildRequires:  python%{pyver}-testscenarios
 BuildRequires:  python%{pyver}-testtools
 BuildRequires:  python%{pyver}-oslotest
+BuildRequires:  python%{pyver}-validations-libs
 
 %if %{pyver} == 2
 BuildRequires:  ansible >= 2
