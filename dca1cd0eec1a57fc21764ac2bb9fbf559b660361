@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ce07ebd3_f221b75b",
+        "filename": "validations-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-04-13T06:36:24Z",
+      "side": 1,
+      "message": "this is needed for python2 too, so it should be out of the conditional.",
+      "range": {
+        "startLine": 45,
+        "startChar": 16,
+        "endLine": 45,
+        "endChar": 47
+      },
+      "revId": "dca1cd0eec1a57fc21764ac2bb9fbf559b660361",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
