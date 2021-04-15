@@ -92,7 +92,6 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
-%{_bindir}/validation.py
 %{pyver_sitelib}/%{srcname}
 %{pyver_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/ansible/
