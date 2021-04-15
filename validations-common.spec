@@ -66,6 +66,11 @@ A collection of Ansible librairies, Plugins and Roles for the Validation Framewo
 %install
 %{py3_install}
 
+# TODO remove this when https://review.opendev.org/c/openstack/validations-common/+/786450
+if [ -f "%{buildroot}%{_bindir}/validation.py" ]; then
+rm -f %{buildroot}%{_bindir}/validation.py
+fi
+
 # Create log directory with some default rights/ownership
 # In tripleo env, it will be overridden in order to allow the deploy user
 # (usually "stack") to write in it
@@ -77,7 +82,6 @@ stestr-3 --test-path validations_common/tests run
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
-%{_bindir}/validation.py
 %{python3_sitelib}/%{srcname}
 %{python3_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/ansible/
