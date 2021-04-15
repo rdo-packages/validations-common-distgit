@@ -86,13 +86,18 @@ sed -i 's/^import pprint/from __future__ import print_function\nimport pprint/' 
 %install
 %{pyver_install}
 
+# TODO remove this when https://review.opendev.org/c/openstack/validations-common/+/786450
+if [ -f "%{buildroot}%{_bindir}/validation.py" ]; then
+rm -f %{buildroot}%{_bindir}/validation.py
+fi
+
 %check
 PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
-%{_bindir}/validation.py
+
 %{pyver_sitelib}/%{srcname}
 %{pyver_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/ansible/
