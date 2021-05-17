@@ -74,6 +74,8 @@ find ./%{srcname}/tests/ -type f -exec sed -i -e 's/from unittest import mock/im
 find ./%{srcname}/tests/ -type f -exec sed -i -e 's/from unittest.mock/from mock/g' {} \;
 find ./%{srcname} -type f -exec sed -i -e 's/from urllib import request/from six.moves.urllib import request/g' {} \;
 sed -i 's/^import pprint/from __future__ import print_function\nimport pprint/' ./%{srcname}/callback_plugins/validation_output.py
+sed -i 's/ConfigParser.SafeConfigParser(strict=False)/ConfigParser.SafeConfigParser()/' ./%{srcname}/library/validations_read_ini.py
+sed -i "s/file: '{path}'/file: {path}/" ./%{srcname}/tests/library/test_validations_read_ini.py
 %endif
 
 # Remove the requirements file so that pbr hooks don't add it
