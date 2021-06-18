@@ -24,21 +24,22 @@ BuildArch:      noarch
 %if 0%{?sources_gpg} == 1
 BuildRequires:  /usr/bin/gpgv2
 %endif
+
 BuildRequires:  git-core
 BuildRequires:  openstack-macros
-BuildRequires:  python3-setuptools
+BuildRequires:  python3-setuptools >= 50.3.0
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr >= 3.1.1
 BuildRequires:  python3-stestr
-BuildRequires:  python3-testscenarios
-BuildRequires:  python3-testtools
-BuildRequires:  python3-oslotest
+BuildRequires:  python3-testscenarios >= 0.4
+BuildRequires:  python3-testtools >= 2.2.0
+BuildRequires:  python3-oslotest >= 3.2.0
 BuildRequires:  (python3dist(ansible) or ansible-core >= 2.11)
 BuildRequires:  python3-PyYAML >= 3.13
 BuildRequires:  python3-validations-libs >= 1.2.0
 
 Requires:       (python3dist(ansible) or ansible-core >= 2.11)
-Requires:       python3-PyYAML
+Requires:       python3-PyYAML >= 3.13
 Requires:       python3-pbr >= 3.1.1
 Requires:       python3-prettytable >= 0.7.2
 Requires:       python3-validations-libs >= 1.2.0
