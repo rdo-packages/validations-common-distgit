@@ -102,4 +102,3 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 %changelog
 * Fri Sep 25 2020 RDO <dev@lists.rdoproject.org> 1.1.1-0.1
 - Update to 1.1.1
-
