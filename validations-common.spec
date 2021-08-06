@@ -35,16 +35,15 @@ BuildRequires:  python3-testtools
 BuildRequires:  python3-oslotest
 
 BuildRequires:  python3dist(ansible) >= 2
-BuildRequires:  python3-PyYAML
-BuildRequires:  python3-validations-libs
+BuildRequires:  python3-PyYAML >= 3.13
+BuildRequires:  python3-validations-libs >= 1.2.1
 
 Requires:       python3dist(ansible) >= 2
 Requires:       python3-PyYAML
 
 Requires:       python3-pbr >= 3.1.1
-
-Requires:       python3-prettytable
-Requires:       python3-validations-libs
+Requires:       python3-prettytable >= 0.7.2
+Requires:       python3-validations-libs >= 1.2.1
 
 %description
 A collection of Ansible librairies, Plugins and Roles for the Validation Framework
