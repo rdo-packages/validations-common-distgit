@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x2426b928085a020d8a90d0d879ab7008d0896c8a
+%global sources_gpg_sign 0x4c29ff0e437f3351fd82bdf47c5a3bc787dc7035
 
 %{!?upstream_version: %global upstream_version %{version}}
 %global upstream_name validations-common
@@ -7,8 +7,8 @@
 
 Name:           validations-common
 Summary:        A collection of Ansible libraries, Plugins and Roles for the Validation Framework
-Version:        XXX
-Release:        XXX
+Version:        1.2.0
+Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://opendev.org/openstack/validations-common
 Source0:        https://tarballs.opendev.org/openstack/%{upstream_name}/%{upstream_name}-%{upstream_version}.tar.gz
@@ -83,3 +83,7 @@ stestr-3 --test-path validations_common/tests run
 %exclude %{python3_sitelib}/validations_common/test*
 
 %changelog
+
+* Mon Aug 16 2021 Jiri Podivin <jpodivin@redhat.com> 1.2.0-1
+- Update to 1.2.0-1
+
