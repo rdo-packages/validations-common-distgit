@@ -47,7 +47,7 @@ Requires:       python3-prettytable
 Requires:       python3-validations-libs
 
 %description
-A collection of Ansible librairies, Plugins and Roles for the Validation Framework
+A collection of Ansible libraries, Plugins and Roles for the Validation Framework
 
 %prep
 # Required for tarball sources verification
