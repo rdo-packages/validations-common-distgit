@@ -40,13 +40,13 @@ BuildRequires:  python3-testtools >= 2.2.0
 BuildRequires:  python3-oslotest >= 3.2.0
 BuildRequires:  python3dist(ansible) >= 2
 BuildRequires:  python3-PyYAML >= 3.13
-BuildRequires:  python3-validations-libs >= 1.0.4
+BuildRequires:  python3-validations-libs >= 1.3.0
 
 Requires:       python3dist(ansible) >= 2
 Requires:       python3-PyYAML >= 3.13
 Requires:       python3-pbr >= 3.1.1
 Requires:       python3-prettytable >= 0.7.2
-Requires:       python3-validations-libs >= 1.0.4 
+Requires:       python3-validations-libs >= 1.3.0
 
 %description
 %{common_desc}
