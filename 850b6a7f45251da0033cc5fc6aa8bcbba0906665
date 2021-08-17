@@ -46,6 +46,30 @@
       "revId": "850b6a7f45251da0033cc5fc6aa8bcbba0906665",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ea212ba6_a20eb48c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 717
+      },
+      "writtenOn": "2021-08-17T12:20:57Z",
+      "side": 1,
+      "message": "Sadly there are only so many ways of saying:\n\"This patch increments the version of the validations-libs dependency\". Maybe I should have gone with that instead, on the other hand, it feels a bit long winded.\n\nWould you prefer me to change it?",
+      "parentUuid": "832998f5_6232db9c",
+      "range": {
+        "startLine": 7,
+        "startChar": 9,
+        "endLine": 7,
+        "endChar": 24
+      },
+      "revId": "850b6a7f45251da0033cc5fc6aa8bcbba0906665",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
     }
   ]
 }
