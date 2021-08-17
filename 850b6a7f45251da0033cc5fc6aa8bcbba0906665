@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "90899407_9794cb1d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2021-08-17T07:42:25Z",
+      "side": 1,
+      "message": "This should be validations-common. I was quite confused with the other review until I checked the spec name :).",
+      "range": {
+        "startLine": 7,
+        "startChar": 9,
+        "endLine": 7,
+        "endChar": 24
+      },
+      "revId": "850b6a7f45251da0033cc5fc6aa8bcbba0906665",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
