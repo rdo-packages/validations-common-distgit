@@ -22,6 +22,30 @@
       "revId": "850b6a7f45251da0033cc5fc6aa8bcbba0906665",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "832998f5_6232db9c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-08-17T11:16:22Z",
+      "side": 1,
+      "message": "actually requirement bump is for validation libs only https://review.rdoproject.org/r/c/openstack/validations-common-distgit/+/34870/4/validations-common.spec#49, but yes it\u0027s quite confusing when looking other similar patches.",
+      "parentUuid": "90899407_9794cb1d",
+      "range": {
+        "startLine": 7,
+        "startChar": 9,
+        "endLine": 7,
+        "endChar": 24
+      },
+      "revId": "850b6a7f45251da0033cc5fc6aa8bcbba0906665",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
     }
   ]
 }
