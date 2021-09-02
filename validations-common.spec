@@ -30,17 +30,29 @@ BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr >= 3.1.1
 BuildRequires:  python3-stestr
+<<<<<<< HEAD   (5e22ef Bumping validation libs version to 1.2.0)
 BuildRequires:  python3-testscenarios
 BuildRequires:  python3-testtools
 BuildRequires:  python3-oslotest
 
 BuildRequires:  python3dist(ansible) >= 2
+=======
+BuildRequires:  python3-testscenarios >= 0.4
+BuildRequires:  python3-testtools >= 2.2.0
+BuildRequires:  python3-oslotest >= 3.2.0
+BuildRequires:  (python3dist(ansible) or ansible-core >= 2.11)
+>>>>>>> CHANGE (6319be Require either ansible or ansible-core)
 BuildRequires:  python3-PyYAML >= 3.13
 BuildRequires:  python3-validations-libs >= 1.2.0
 
+<<<<<<< HEAD   (5e22ef Bumping validation libs version to 1.2.0)
 Requires:       python3dist(ansible) >= 2
 Requires:       python3-PyYAML
 
+=======
+Requires:       (python3dist(ansible) or ansible-core >= 2.11)
+Requires:       python3-PyYAML >= 3.13
+>>>>>>> CHANGE (6319be Require either ansible or ansible-core)
 Requires:       python3-pbr >= 3.1.1
 Requires:       python3-prettytable >= 0.7.2
 Requires:       python3-validations-libs >= 1.2.0
