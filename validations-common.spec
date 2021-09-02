@@ -33,14 +33,12 @@ BuildRequires:  python3-stestr
 BuildRequires:  python3-testscenarios
 BuildRequires:  python3-testtools
 BuildRequires:  python3-oslotest
-
-BuildRequires:  python3dist(ansible) >= 2
+BuildRequires:  (python3dist(ansible) or ansible-core >= 2.11)
 BuildRequires:  python3-PyYAML >= 3.13
 BuildRequires:  python3-validations-libs >= 1.2.0
 
-Requires:       python3dist(ansible) >= 2
+Requires:       (python3dist(ansible) or ansible-core >= 2.11)
 Requires:       python3-PyYAML
-
 Requires:       python3-pbr >= 3.1.1
 Requires:       python3-prettytable >= 0.7.2
 Requires:       python3-validations-libs >= 1.2.0
