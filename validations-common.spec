@@ -43,6 +43,9 @@ BuildRequires:  python3-PyYAML >= 3.13
 BuildRequires:  python3-validations-libs >= 1.2.0
 
 Requires:       (python3dist(ansible) or ansible-core >= 2.11)
+Requires:       ansible-collection-ansible-posix >= 1.2.0
+Requires:       ansible-collection-community-general >= 2.5.1
+Requires:       ansible-collection-containers-podman >= 1.4.1
 Requires:       python3-PyYAML >= 3.13
 Requires:       python3-pbr >= 3.1.1
 Requires:       python3-prettytable >= 0.7.2
