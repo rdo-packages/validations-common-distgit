@@ -92,3 +92,4 @@ stestr-3 --test-path validations_common/tests run
 %dir %{_localstatedir}/log/validations
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/validations-common/commit/f7bbf218eec8d9813c2a97370b6798e7133de421
