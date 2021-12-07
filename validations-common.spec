@@ -71,11 +71,6 @@ Requires:       python3-validations-libs >= 1.2.0
 %install
 %{py3_install}
 
-# TODO remove this when https://review.opendev.org/c/openstack/validations-common/+/786450
-if [ -f "%{buildroot}%{_bindir}/validation.py" ]; then
-rm -f %{buildroot}%{_bindir}/validation.py
-fi
-
 # Create log directory with some default rights/ownership
 # In tripleo env, it will be overridden in order to allow the deploy user
 # (usually "stack") to write in it
