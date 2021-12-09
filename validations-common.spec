@@ -69,6 +69,13 @@ Requires:       python3-validations-libs >= 1.2.0
 %{py3_build}
 
 %install
+# TODO(jpodivin) remove once callbacks are moved to the Validations Libs
+# https://review.opendev.org/c/openstack/validations-common/+/820562
+# https://review.opendev.org/c/openstack/validations-libs/+/820551
+if [ -f "%{buildroot}%{_datadir}/ansible/callback_plugins/" ]; then
+rm -rf %{buildroot}%{_datadir}/ansible/callback_plugins/
+fi
+
 %{py3_install}
 
 # Create log directory with some default rights/ownership
