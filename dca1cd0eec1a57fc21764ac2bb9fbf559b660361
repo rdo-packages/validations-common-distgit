@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": true,
       "key": {
         "uuid": "ce07ebd3_f221b75b",
         "filename": "validations-common.spec",
@@ -20,10 +21,34 @@
         "endChar": 47
       },
       "revId": "dca1cd0eec1a57fc21764ac2bb9fbf559b660361",
-      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
-      "unresolved": true
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b6e4eb2_475f2ffc",
+        "filename": "validations-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 717
+      },
+      "writtenOn": "2022-02-07T08:08:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ce07ebd3_f221b75b",
+      "range": {
+        "startLine": 45,
+        "startChar": 16,
+        "endLine": 45,
+        "endChar": 47
+      },
+      "revId": "dca1cd0eec1a57fc21764ac2bb9fbf559b660361",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "de456e73_f1381ac4",
         "filename": "validations-common.spec",
@@ -37,10 +62,10 @@
       "side": 1,
       "message": "We already seem to have that dep,",
       "revId": "dca1cd0eec1a57fc21764ac2bb9fbf559b660361",
-      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
-      "unresolved": true
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "caf8e773_4fdf91d8",
         "filename": "validations-common.spec",
@@ -55,8 +80,7 @@
       "message": "Done",
       "parentUuid": "de456e73_f1381ac4",
       "revId": "dca1cd0eec1a57fc21764ac2bb9fbf559b660361",
-      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
-      "unresolved": false
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
