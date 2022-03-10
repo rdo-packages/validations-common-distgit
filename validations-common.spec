@@ -76,6 +76,12 @@ Requires:       python3-validations-libs >= 1.2.0
 # (usually "stack") to write in it
 install -d -m 755 %{buildroot}%{_localstatedir}/log/validations
 
+# @matbu: Remove this statement when this review will be merged:
+# https://review.opendev.org/c/openstack/validations-common/+/820562
+if [ -d "%{buildroot}%{_datadir}/ansible/callback_plugins" ]; then
+rm -rf %{buildroot}%{_datadir}/ansible/callback_plugins
+fi
+
 %check
 stestr-3 --test-path validations_common/tests run
 
