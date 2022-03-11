@@ -95,3 +95,4 @@ stestr-3 --test-path validations_common/tests run
 * Tue Oct 19 2021 RDO <dev@lists.rdoproject.org> 1.4.0-1
 - Update to 1.4.0
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/validations-common/commit/602c7d931d010feb9f61fe6aa68e582f04ae376a
