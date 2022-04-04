@@ -39,14 +39,14 @@ BuildRequires:  python3-testscenarios >= 0.4
 BuildRequires:  python3-testtools >= 2.2.0
 BuildRequires:  python3-oslotest >= 3.2.0
 BuildRequires:  (python3dist(ansible) or ansible-core >= 2.11)
-BuildRequires:  python3-PyYAML >= 3.13
+BuildRequires:  python3-pyyaml >= 3.13
 BuildRequires:  python3-validations-libs >= 1.2.0
 
 Requires:       (python3dist(ansible) or ansible-core >= 2.11)
 Requires:       ansible-collection-ansible-posix >= 1.2.0
 Requires:       ansible-collection-community-general >= 2.5.1
 Requires:       ansible-collection-containers-podman >= 1.4.1
-Requires:       python3-PyYAML >= 3.13
+Requires:       python3-pyyaml >= 3.13
 Requires:       python3-pbr >= 3.1.1
 Requires:       python3-prettytable >= 0.7.2
 Requires:       python3-validations-libs >= 1.2.0
