@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1aa20973_4a38f3e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 717
+      },
+      "writtenOn": "2022-04-04T12:08:46Z",
+      "side": 1,
+      "message": "It does seem straightforward enough. Out of curiosity, when was the package renamed? Presumably quite recently as we aren\u0027t seeing any build failures yet.",
+      "revId": "186c7b0ed67a4ce84c67da31eba52fbb6f17d13e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
