@@ -17,8 +17,8 @@
 
 Name:           validations-common
 Summary:        A collection of Ansible libraries, Plugins and Roles for the Validation Framework
-Version:        1.1.1
-Release:        0.1%{?dist}
+Version:        1.6.0
+Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://opendev.org/openstack/validations-common
 Source0:        https://tarballs.opendev.org/openstack/%{upstream_name}/%{upstream_name}-%{upstream_version}.tar.gz
@@ -100,5 +100,8 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path validations_common/tests run
 %exclude %{pyver_sitelib}/validations_common/test*
 
 %changelog
+* Thu May 19 2022 RDO <dev@lists.rdoproject.org> 1.6.0-1
+- Update to 1.6.0
+
 * Fri Sep 25 2020 RDO <dev@lists.rdoproject.org> 1.1.1-0.1
 - Update to 1.1.1
