@@ -7,7 +7,7 @@
 
 Name:           validations-common
 Summary:        A collection of Ansible libraries, Plugins and Roles for the Validation Framework
-Version:        1.2.0
+Version:        1.7.0
 Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://opendev.org/openstack/validations-common
@@ -80,6 +80,8 @@ stestr-3 --test-path validations_common/tests run
 %exclude %{python3_sitelib}/validations_common/test*
 
 %changelog
+* Tue Jul 12 2022 Adriano Petrich <apetrich@redhat.com> 1.7.0-1
+- Update to 1.7.0-1
 
 * Mon Aug 16 2021 Jiri Podivin <jpodivin@redhat.com> 1.2.0-1
 - Update to 1.2.0-1
