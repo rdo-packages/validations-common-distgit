@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x4c29ff0e437f3351fd82bdf47c5a3bc787dc7035
+%global sources_gpg_sign 0xa63ea142678138d1bb15f2e303bdfd64dd164087
 
 %{!?upstream_version: %global upstream_version %{version}}
 %global upstream_name validations-common
@@ -11,7 +11,7 @@ Validation Framework
 
 Name:           validations-common
 Summary:        Validation common libraries
-Version:        1.4.0
+Version:        1.7.0
 Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://opendev.org/openstack/validations-common
@@ -92,6 +92,9 @@ stestr-3 --test-path validations_common/tests run
 %dir %{_localstatedir}/log/validations
 
 %changelog
+* Tue Jul 12 2022 Adriano Petrich <apetrich@redhat.com> 1.7.0-1
+- Update to 1.7.0
+
 * Tue Oct 19 2021 RDO <dev@lists.rdoproject.org> 1.4.0-1
 - Update to 1.4.0
 
