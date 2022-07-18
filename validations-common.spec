@@ -11,7 +11,7 @@ Validation Framework
 
 Name:           validations-common
 Summary:        Validation common libraries
-Version:        1.7.0
+Version:        1.7.1
 Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://opendev.org/openstack/validations-common
@@ -92,6 +92,9 @@ stestr-3 --test-path validations_common/tests run
 %dir %{_localstatedir}/log/validations
 
 %changelog
+* Mon Jul 18 2022 Jiri Podivin <jpodivin@redhat.com> 1.7.1-1
+- Update to 1.7.1
+
 * Tue Jul 12 2022 Adriano Petrich <apetrich@redhat.com> 1.7.0-1
 - Update to 1.7.0
 
