@@ -1,0 +1,9 @@
+Code-Review+2: David J Peacock <david.j.peacock@gmail.com>
+Code-Review+2: Javier Peña <jpena@redhat.com>
+Workflow+1: David J Peacock <david.j.peacock@gmail.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 19 Jul 2022 11:54:43 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/validations-common-distgit/+/35026
+Project: openstack/validations-common-distgit
+Branch: refs/heads/wallaby-rdo
