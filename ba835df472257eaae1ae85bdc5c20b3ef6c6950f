@@ -33,6 +33,23 @@
       "message": "recheck new release",
       "revId": "ba835df472257eaae1ae85bdc5c20b3ef6c6950f",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3f933cc_5c808acb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 717
+      },
+      "writtenOn": "2022-08-18T09:17:18Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "ba835df472257eaae1ae85bdc5c20b3ef6c6950f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
