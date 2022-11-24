@@ -1,0 +1,9 @@
+Code-Review+2: mathieu bultel <mat.bultel@gmail.com>
+Code-Review+2: David J Peacock <david.j.peacock@gmail.com>
+Workflow+1: David J Peacock <david.j.peacock@gmail.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Thu, 24 Nov 2022 14:11:21 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/validations-common-distgit/+/46164
+Project: openstack/validations-common-distgit
+Branch: refs/heads/rpm-master
