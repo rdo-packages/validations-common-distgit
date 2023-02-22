@@ -38,11 +38,11 @@ BuildRequires:  python3-stestr
 BuildRequires:  python3-testscenarios >= 0.4
 BuildRequires:  python3-testtools >= 2.2.0
 BuildRequires:  python3-oslotest >= 3.2.0
-BuildRequires:  (python3dist(ansible) or ansible-core >= 2.11)
+BuildRequires:  (python3dist(ansible) or ansible-core >= 2.11),(python3dist(ansible) or ansible-core >= 2.11)
 BuildRequires:  python3-PyYAML >= 3.13
 BuildRequires:  python3-validations-libs >= 1.2.0
 
-Requires:       (python3dist(ansible) or ansible-core >= 2.11)
+Requires:       (python3dist(ansible) or ansible-core >= 2.11),(python3dist(ansible) or ansible-core >= 2.11) 
 Requires:       ansible-collection-ansible-posix >= 1.2.0
 Requires:       ansible-collection-community-general >= 2.5.1
 Requires:       ansible-collection-containers-podman >= 1.4.1
@@ -70,7 +70,7 @@ Requires:       python3-validations-libs >= 1.2.0
 
 %install
 %{py3_install}
-
+# DNM build test
 # Create log directory with some default rights/ownership
 # In tripleo env, it will be overridden in order to allow the deploy user
 # (usually "stack") to write in it
