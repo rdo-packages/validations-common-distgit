@@ -70,7 +70,7 @@ Requires:       python3-validations-libs >= 1.2.0
 
 %install
 %{py3_install}
-
+# DNM build test
 # Create log directory with some default rights/ownership
 # In tripleo env, it will be overridden in order to allow the deploy user
 # (usually "stack") to write in it
@@ -83,7 +83,11 @@ rm -rf %{buildroot}%{_datadir}/ansible/callback_plugins
 fi
 
 %check
+ln -s /usr/lib/python3.11/site-packages/ansible /usr/lib/python3.9/site-packages
+ln -s  /usr/lib/python3.11/site-packages/ansible_core-2.*py3.11.egg-info /usr/lib/python3.9/site-packages/
 stestr-3 --test-path validations_common/tests run
+rm /usr/lib/python3.9/site-packages/ansible
+rm /usr/lib/python3.9/site-packages/ansible_core-2.*py3.11.egg-info
 
 %files
 %doc README* AUTHORS ChangeLog
