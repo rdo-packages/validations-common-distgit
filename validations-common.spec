@@ -51,6 +51,10 @@ Requires:       python3-pbr >= 3.1.1
 Requires:       python3-prettytable >= 0.7.2
 Requires:       python3-validations-libs >= 1.2.0
 
+# Ansible version cap
+BuildConflicts:  (python3dist(ansible) or ansible-core >= 2.14.1)
+Conflicts:  (python3dist(ansible) or ansible-core >= 2.14.1)
+
 %description
 %{common_desc}
 
@@ -70,7 +74,7 @@ Requires:       python3-validations-libs >= 1.2.0
 
 %install
 %{py3_install}
-
+# DNM build test
 # Create log directory with some default rights/ownership
 # In tripleo env, it will be overridden in order to allow the deploy user
 # (usually "stack") to write in it
