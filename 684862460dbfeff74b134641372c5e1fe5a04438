@@ -22,6 +22,30 @@
       },
       "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a6f09c20_55061c56",
+        "filename": "validations-common.spec",
+        "patchSetId": 16
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 717
+      },
+      "writtenOn": "2023-02-27T15:28:49Z",
+      "side": 1,
+      "message": "Yes, I\u0027m well aware of that. This is temporary measure to unblock build.",
+      "parentUuid": "941f3cef_0d2ed8c3",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 63
+      },
+      "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
