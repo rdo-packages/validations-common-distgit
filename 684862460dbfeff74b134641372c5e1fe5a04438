@@ -46,6 +46,29 @@
       },
       "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ed740e2_fa820f40",
+        "filename": "validations-common.spec",
+        "patchSetId": 16
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 657
+      },
+      "writtenOn": "2023-02-27T15:34:47Z",
+      "side": 1,
+      "message": "I don\u0027t think this works at all to cap the ansible version. The conditional as written is:\n\n- python3dist(ansible)\n- OR\n- ansible-core \u003c 2.14.2\n\nLooking at the Provides for this el9 ansible-core build:\nhttps://kojihub.stream.centos.org/koji/rpminfo?rpmID\u003d755582\n\nProvides both ansible-core \u003d 2.14.2-4.el9 and python3dist(ansible-core) \u003d 2.14.2. The latter meets the python3dist(ansible) requirement, so the OR condition in this line is satisfied, meaning you end up with a 2.14.2 build.\n\nIf the goal here is to avoid python3.11 builds, you could just require python3.9dist(ansible-core) \u003e\u003d 2.11 (or whichever min version) and that should be enough.",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 63
+      },
+      "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
