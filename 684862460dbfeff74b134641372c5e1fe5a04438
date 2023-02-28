@@ -117,6 +117,30 @@
       },
       "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aebe388e_348b5dac",
+        "filename": "validations-common.spec",
+        "patchSetId": 16
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 717
+      },
+      "writtenOn": "2023-02-28T11:36:15Z",
+      "side": 1,
+      "message": "Yeah. If you try to request python3.9dist(ansible) \u003e 2, you get `No matching package to install: \u0027python3.9dist(ansible) \u003e\u003d 2\u0027` error.",
+      "parentUuid": "fb44f1cb_df7175be",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 63
+      },
+      "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
