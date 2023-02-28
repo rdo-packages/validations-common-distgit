@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "11294a0a_3dbf96ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-02-28T12:50:36Z",
+      "side": 1,
+      "message": "capping versions in specs is a bad practice and will led to other issues. I\u0027d prefer to skip unit tests at this point and apply workarounds in repos config until we have a better fix",
+      "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "941f3cef_0d2ed8c3",
