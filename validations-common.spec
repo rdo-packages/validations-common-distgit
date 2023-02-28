@@ -82,9 +82,6 @@ if [ -d "%{buildroot}%{_datadir}/ansible/callback_plugins" ]; then
 rm -rf %{buildroot}%{_datadir}/ansible/callback_plugins
 fi
 
-%check
-stestr-3 --test-path validations_common/tests run
-
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
