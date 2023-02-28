@@ -93,6 +93,30 @@
       },
       "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb44f1cb_df7175be",
+        "filename": "validations-common.spec",
+        "patchSetId": 16
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 657
+      },
+      "writtenOn": "2023-02-28T09:33:16Z",
+      "side": 1,
+      "message": "You\u0027re right, I must\u0027ve looked at the wrong run yesterday.\n\nLooking at the repo the job consumes:\nhttp://mirror.in2p3.fr/pub/linux/centos-stream/9-stream/AppStream/x86_64/os/Packages/\n\nansible-core-2.14.2-2.el9, which would\u0027ve slipped past the conditional, isn\u0027t actually in there. And later 2.14.2 builds stopped providing python3dist(ansible) meaning they can\u0027t make it through either, so this works.",
+      "parentUuid": "d0850d15_1d690ac1",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 63
+      },
+      "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
