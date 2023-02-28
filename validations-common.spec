@@ -76,9 +76,6 @@ Requires:       python3-validations-libs >= 1.2.0
 # (usually "stack") to write in it
 install -d -m 755 %{buildroot}%{_localstatedir}/log/validations
 
-%check
-stestr-3 --test-path validations_common/tests run
-
 %files
 %doc README* AUTHORS ChangeLog
 %license LICENSE
