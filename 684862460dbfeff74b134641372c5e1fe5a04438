@@ -69,6 +69,30 @@
       },
       "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0850d15_1d690ac1",
+        "filename": "validations-common.spec",
+        "patchSetId": 16
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 717
+      },
+      "writtenOn": "2023-02-28T08:30:33Z",
+      "side": 1,
+      "message": "According to the logs this does indeed pull the ansible-core 2.14.1-1.el9, so I would say the conditional is working as intended.\n\nI can drop the `or` operator entirely, I suppose. But we are only using this as a stopgap measure, in a short time the build will begin to fail again, as the requested version won\u0027t be available.",
+      "parentUuid": "6ed740e2_fa820f40",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 63
+      },
+      "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
