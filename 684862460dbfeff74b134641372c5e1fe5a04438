@@ -67,6 +67,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2c92fd04_c900a610",
+        "filename": "validations-common.spec",
+        "patchSetId": 16
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-02-28T12:57:19Z",
+      "side": 1,
+      "message": "Given that this is a temporary measure, wouldn\u0027t it be easier to just remove unit tests? that will not block the builds in rhel9.2 buildroots",
+      "parentUuid": "a6f09c20_55061c56",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 63
+      },
+      "revId": "684862460dbfeff74b134641372c5e1fe5a04438",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6ed740e2_fa820f40",
         "filename": "validations-common.spec",
         "patchSetId": 16
