@@ -63,7 +63,7 @@ A collection of Ansible librairies, Plugins and Roles for the Validation Framewo
 
 %install
 %{py3_install}
-
+#DNM test build
 # Create log directory with some default rights/ownership
 # In tripleo env, it will be overridden in order to allow the deploy user
 # (usually "stack") to write in it
