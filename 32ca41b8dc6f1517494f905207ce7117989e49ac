@@ -1,0 +1,9 @@
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Code-Review+2: Jiří Podivín <jpodivin@gmail.com>
+Workflow+1: Jiří Podivín <jpodivin@gmail.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 31 Mar 2023 10:16:45 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/validations-common-distgit/+/47641
+Project: openstack/validations-common-distgit
+Branch: refs/heads/rpm-master
