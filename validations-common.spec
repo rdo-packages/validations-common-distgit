@@ -87,3 +87,4 @@ install -d -m 755 %{buildroot}%{_localstatedir}/log/validations
 * Mon Aug 16 2021 Jiri Podivin <jpodivin@redhat.com> 1.2.0-1
 - Update to 1.2.0-1
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/validations-common/commit/fa150228512a47661df2b585e9770afbc3635b2a
