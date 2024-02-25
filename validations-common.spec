@@ -90,3 +90,4 @@ install -d -m 755 %{buildroot}%{_localstatedir}/log/validations
 * Thu Nov 03 2022 RDO <dev@lists.rdoproject.org> 1.8.0-1
 - Update to 1.8.0
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/validations-common/commit/fa150228512a47661df2b585e9770afbc3635b2a
