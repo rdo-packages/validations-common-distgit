@@ -98,4 +98,3 @@ fi
 
 * Wed Apr 13 2022 RDO <dev@lists.rdoproject.org> 1.7.0-1
 - Update to 1.7.0
-
